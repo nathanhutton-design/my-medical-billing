@@ -53,3 +53,9 @@ setTimeout(() => {
 document.getElementById("toggleTheme").onclick = () => {
   document.body.classList.toggle("dark");
 };
+const btn = document.getElementById("toggleTheme");
+
+btn.onclick = () => {
+  document.body.classList.toggle("dark");
+  btn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+};
