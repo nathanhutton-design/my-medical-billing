@@ -50,3 +50,6 @@ setTimeout(() => {
 
   resultDiv.classList.add("show");
 }, 100);
+document.getElementById("toggleTheme").onclick = () => {
+  document.body.classList.toggle("dark");
+};
